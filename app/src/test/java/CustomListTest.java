@@ -1,10 +1,10 @@
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.example.simpleparadox.listycity.City;
 import com.example.simpleparadox.listycity.CustomList;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
@@ -12,7 +12,7 @@ public class CustomListTest {
 
         private CustomList list;
 
-        @Before
+        @BeforeEach
         public void createList(){
             list = new CustomList(null, new ArrayList<City>());
         }
