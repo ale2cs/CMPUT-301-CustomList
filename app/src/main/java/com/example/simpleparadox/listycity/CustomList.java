@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.widget.TextViewCompat;
 
 import org.w3c.dom.Text;
 
@@ -66,5 +67,9 @@ public class CustomList extends ArrayAdapter<City> {
 
     public boolean hasCity(City city) {
         return cities.contains(city);
+    }
+
+    public int countCities() {
+        return 0;
     }
 }
